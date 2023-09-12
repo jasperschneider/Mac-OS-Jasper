@@ -1,0 +1,416 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(wp11.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Raleway 400', sans-serif;
+
+}
+
+/* die folgenen close punkte sind dazu da daas aussehen und die faben/größe/hover-eigenschaften(frabe/größe) der mac ähnlichen close button zu definieren */
+
+.close {
+height: 20px;
+width: 200px;
+margin-left: 25px;
+margin-top: 15px;
+display:inline;
+cursor: pointer;
+}
+
+.closered {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(215, 0, 0);
+    border-radius: 100%;
+    display: inline-block;
+    transition: 0.1s all ease-in-out;
+    position: absolute;
+    
+}
+
+.closered:hover{
+    height: 11px;
+    width: 11px;
+    background-color: red;
+}
+
+.closeyellow {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(228, 175, 0);
+    border-radius: 100%;
+    display: inline-block;
+    transition: 0.1s all ease-in-out;
+    position: absolute;
+    margin-left: 15px;
+}
+
+.closeyellow:hover{
+    height: 11px;
+    width: 11px;  
+    background-color: rgb(244, 187, 0);
+}
+
+.colsegreen {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(13, 194, 0);
+    border-radius: 100%;
+    display: inline-block;
+    transition: 0.1s all ease-in-out;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.colsegreen:hover{
+    height: 11px;
+    width: 11px;
+    background-color: rgb(14, 206, 0); 
+}
+/* bar bestimmt ganz grundsätzliche eigenschafen un dem hauptelement in der mitte wie z.b die länge/breite/hintergrundfarbe/schatten */
+.bar {
+    display: flex;
+    border-radius: 4vh;
+    background-color: rgba(240, 248, 255, 0.574);
+    height: 240vh;
+    width: 45vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border: 1px solid rgba(255, 255, 255, 0.201);
+    box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.108);
+    /* backdrop-filter erzeugt den effect als würde man durch verschwommen des glass sehen */
+    backdrop-filter: blur(10px);
+    
+}
+
+
+/* dies definiert das aussehen des profilbildes (größe) */
+.profilepicture {
+    display: flex;
+    height: 10vh;
+    border-radius: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    
+    
+    border-width: 5px  ; 
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0) ;
+    /* transition mit den gezeigten eigenschaften schaft zweischen anmationen wie hover einen sauberen übergang */
+    transition: all 0.1s ease-in-out;
+}
+ /* wenn man mit der maus über dem object ist (hover) verändert sich die randfarbe oder wie auf meiner webseite sie erscheint. */
+.profilepicture:hover{
+    border-color: rgba(255, 255, 255, 0.502) ;  
+}
+ /* hier wird definiert wie (Good Day 👋 ) dargestekt wird */
+.infotext{
+    margin-top: 5px;
+    font-family: 'Raleway 400', sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.649);
+    display: flex;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+/* dies definiert wie mein name dargestellt wird (größe/bold) */
+.profiletext{
+    align-items: center;
+    font-family: 'Raleway 700', sans-serif;
+    color: rgba(0, 0, 0, 0.738);
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 0px;
+}
+/* dies ist die div definierung zu dem punkt Status(aktiv) */
+.status-status{
+width: 20vh;
+display: inline-block;
+}
+/* hier wird fetsgellegt das der punkt bei Status(aktiv) grün sein soll und das er rund ist */
+.colsegreen-aktiv{
+    height: 10px;
+    width: 10px;
+    background-color: rgba(13, 196, 0, 0.649);
+    border-radius: 100%;
+    margin-top: 6px;
+    margin-left: 5px;
+    transition: 0.1s all ease-in-out;
+    float: left;
+}
+/* Status(aktiv) verändert auch beim hover die farbe */
+.colsegreen-aktiv:hover{
+    background-color: rgba(16, 233, 0, 0.92);   
+}
+/* Hier wird vom Status(aktiv) der text still festgelegt */
+.Status {
+    margin-top: 5px;
+    font-family: 'Raleway 400', sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.436);
+    float: left;
+    margin-left: 0px;
+}
+
+.profile {
+   
+    height: 1vh;
+    width: 35vh;
+    margin: 5vh;
+    border-radius: 2vh;
+    display: block;
+    justify-content:baseline;
+    margin-left: 0px;
+    
+
+}
+
+/* dies bestimmt das ein div mit der class "line-1" wie eine linie aussieht */
+.line-1 {
+    height: 2px;
+    background: rgba(0, 0, 0, 0.065);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 0px;
+
+    
+}
+/* dies bestimmt das ein div mit der class "line-1" wie eine linie aussieht */
+.line-2 {
+    height: 2px;
+    background: rgba(0, 0, 0, 0.065);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: 0px;
+}
+/*  hier werden grundsätze für alle ul (unordertlists ) elemente festgelegt */
+ul {
+    list-style: none;
+    padding-left: 0px;
+    
+}
+/*  hier werden grundsätze für alle li (list) elemente festgelegt */
+li {
+    margin-top: 10px;
+    color: rgba(37, 37, 37, 0.748);
+    height: 50px;
+    display: flex;
+    border-radius: 2VH;
+    align-items: center;
+    padding-left: 20px;
+    transition: font-weight  ease-in-out;
+    width: 250px;
+    transition: all 0.1s ease-in-out;
+    
+}
+
+
+li:hover{
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0.129);
+    border-radius: 2vh;
+    cursor: pointer;
+}
+
+/* about ist ein deviniertes div um die page2 */
+
+.About{
+    color: rgb(60, 60, 60);
+    width:36vh;
+    font-weight: bold;
+    font-size: small;
+    height: 220px;
+   
+}
+
+
+/* hier spreche ich alle "<p>" in dem div mit der kalsse (.keywords) an. */
+.keywords > p {
+    margin-left: 10px;
+    color: rgb(77, 77, 77);
+    background-color: rgba(240, 248, 255, 0.309);
+    border-radius: 0.5vh;
+    padding: 10px;
+    font-weight:normal ;
+    display: inline-block;
+    transition: all ease-in-out;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+
+}
+/* hier das selbe nur mit hover */
+.keywords > p:hover {
+    background-color: rgba(240, 248, 255, 0.447);
+    font-weight: bold;
+    box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.108) ;
+    transition: all 0.2s 0.1s ease-in-out;
+    transform: scale(1.1,1.1)
+}
+
+.menu{
+    font-weight: bold;
+    font-size: small;
+    color: rgb(60, 60, 60);
+    
+}
+
+a{
+    text-decoration: none;
+}
+/*  hier ist der header von dem punkt filmmaking */
+.Filmmaking{
+    color: rgb(60, 60, 60);
+    width:34vh;
+    font-weight: bold;
+    font-size: small;
+    color: rgb(60, 60, 60);
+   
+    
+    
+}
+
+/* das div sektioninfo haben alle langen texten die unter einem menu punkt untergeordent sind */
+
+.sectioninfo{
+    color: rgb(70, 70, 70);
+    font-weight:normal ; 
+    font-size: small;  
+}
+/*  h4 bestimmt das aussehrn von allen kleine sektions überschrifen */
+h4{
+    margin-top: 20px;
+    padding-top: 1vh;
+}
+
+.sectionheader{
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+    font-size: small;
+}
+
+
+/* hier wir alles defieniert was mit den emojis unter dem punkt jungecliberale zu tun hat */
+.emojilist{
+    list-style-type: none;
+    font-size: larger;
+}
+
+.emojilist li{
+    display: inline;
+    align-items: center;
+    margin: 1vh;
+    border-radius: 2vh;
+    font-size: 20px;
+}
+
+.emojilist li:hover{
+    box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.059) ;
+    background-color: rgba(240, 248, 255, 0.327);
+    transition: all 0.2s 0.1s ease-in-out;
+}
+
+.emojili{
+    background-color: rgba(240, 248, 255, 0.309);
+    padding: 14px;
+}
+
+
+/* hier habe ich spezierl die klasen message angesprochen um das textfeld für dir message größer zu machen */
+
+.message{
+    width: 90%;
+    padding-bottom: 10vh;
+}
+/* hier wird defieniert wie die ganzen ausfüll objete aussehn sollen */
+input{
+    border-style: none;
+    text-decoration: none;
+    margin: 1vh;
+    border-radius:1vh ;
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.704);
+    outline: none;
+    height: 3vh;
+    
+}
+
+input:hover{
+    background-color: rgba(254, 255, 255, 0.429);
+    transition: all 0.2s 0.1s ease-in-out;
+}
+/* hier wir der style von dem sende icon (svg) bearbeitet  */
+.sendsvg{
+    height: 3vh;
+    margin-top: 5px;
+    fill:rgb(77, 77, 77);
+    border-radius:1vh;
+    cursor: pointer; 
+    transition: all 0.2s 0.1s ease-in-out;
+}
+
+
+
+/* hier wird festgelegt wie svg und checkbox zu einnander ausgerichtet werden  */
+
+.svgbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: none;
+    border-radius: 1vh;
+    background-color: rgba(255, 255, 255, 0.704);
+    transform: translate(7%, 0);
+    height: 6vh;
+    margin-top: 2vh;
+}
+
+.svgbutton:hover{
+    background-color: rgba(254, 255, 255, 0.429);
+    transition: all 0.2s 0.1s ease-in-out;
+    box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.108) ;
+
+}
+
+/* hier wir dad aussehen der verlinkung zu meinem instagram acount definiert */
+.linkinsta{
+ text-align: center;   
+ margin-top: 10vh;
+ text-decoration: none;
+ color: rgba(37, 37, 37, 0.748);
+ font-size: small;
+ font-weight: bold;
+}
+
+
+.instagram{
+    color: rgba(37, 37, 37, 0.748);
+    padding: 1vh;
+    border-radius: 1vh;
+  
+}
+
+.instagram:hover{
+    transition: all 0.2s 0.1s ease-in-out;
+    box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.06) ;
+
+}
+/*  hier wir das copywrit logo/text in die richtige position gebracht. */
+.copywrite{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 10px;
+    font-weight: bold;
+}

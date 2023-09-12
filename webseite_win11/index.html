@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mac OS Jasper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;500;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    
+    <div class="bar">
+        
+        <!-- close buttons (red;yello;green) -->
+        <div class="close">
+            <div class="closered"></div>
+            <div class="closeyellow"></div>
+            <div class="colsegreen"></div>
+        </div>
+
+        <!-- prpviel über jaspper ganz oben -->
+        <div class="profile" >
+            <div class="profilepicturediv">
+               <img class="profilepicture" src="Jasper.jpg" alt="">
+               <p class="profiletext" >Jasper Schneider</p>
+               <p class="infotext">Good Day 👋</p>
+               <div class="status-status"> <p class="Status">Status: Aktiv</p><div class="colsegreen-aktiv"></div></div>
+              
+            </div>
+            
+            <!-- trenn line -->
+            <div class="line-1"></div> 
+                
+            <div class="menu" id="page1"> 
+                <h4>
+                    Menu:
+                </h4>
+            </div>
+
+            <!-- diese lsite führt alle punkte des menus auf -->
+            <!-- "<a>" verlinkt die menu-punkte mit den pages (sections) -->
+            <ul> 
+                <a href="#page1"><li>About me</li></a>
+                <a href="#page2"><li>Filmmaking</li></a>
+                <a href="#page3"><li>Junge Liberale</li></a>
+                <a href="#page4"><li>Ceciliengymnaium</li></a>
+               <a href="#page5"><li>Contact</li></a> 
+            </ul>
+            
+            <div class="line-2"></div>
+
+            <section class="About" id="page2">
+               <!-- h4 ist die standatisierte gröse für seiten überschriften auf meiner seite -->
+                <h4>About me:</h4>
+                <div class="keywords">
+                    <!-- dies sind die punkte die bei about me aufgeführt werden -->
+                    <p>Creativ</p><p>Klavier</p><p>Jura</p><p>fritz-kola</p>
+                    <p>Pizza</p><p>Liberal</p><p>M Kaffee</p>
+                    <p>Happy</p><p>Fitness</p><p>Artist</p>
+                    <p>Designer</p><p>Spanien</p><p>Politik</p>
+                   </div>
+            </section>
+
+            <div class="line-2" id="page3"></div>
+
+            <section class="Filmmaking" id="page4">
+                <h4>Filmmaking:</h4>
+                <!-- "<p>" ist der tag der die langen texte aufführt wie z.b. auch bei Julis oder cecilengymnasium-->
+                <p class="sectioninfo">
+                    I like watching good movies. That is why I am interested in Filmmaking. I make comercal films for local clients. This is pretty fun.
+                </p>
+            </section>
+
+            <div class="line-"></div>
+
+            <section class="Julis">
+               <div class="juliback"> 
+                <h4 class="sectionheader">Junge Liberale:</h4>
+                <p class="sectioninfo">In addition, I support the Young Liberals in their socialmedia presence. I also find it very exciting to debate issues at congresses.</p>
+                </div>
+                <!-- dies sind die punkte die bei julis als emojis aufgeführt werden. -->
+                <ul class="emojilist">
+                    <li class="emojili">🗽</li>
+                    <li class="emojili">⚖</li>
+                    <li class="emojili">💛</li>
+                    <li class="emojili">🚀</li>
+                </ul>
+            </section>
+
+            <div class="line-2"></div>
+
+            <section class="Ceciliengymnaium" id="page5">
+                <h4 class="sectionheader">Ceciliengymnaium:</h4>
+                <p class="sectioninfo">I think it's very important to protect and defend your rights, which is why I'm involved in the SV of the Ceciliengymnaium Bielefeld. It's a great honor that I'm allowed to take a leading position there and that I'm active there as a student speaker.</p>
+            </section>
+            
+            <div class="line-2"></div>
+
+            
+
+            <section class="Contact">
+               <h4 class="sectionheader">Contact me:</h4> 
+               <!-- mit "<input>" habe ich die tipp felder gemacht  -->
+                <input type="text" class="name" placeholder="Enter your Name">
+                <input type="text" class="email" placeholder="Enter a valid e-mail">
+                <input type="text" class="message" placeholder="Enter your message">
+                
+                <!-- um einen senden button zu bekommen habe ich ein sende-icon(svg) in einen button eingefügt -->
+                <div class="svgclass">
+                <button class="svgbutton">
+                    <svg class="sendsvg" viewBox="0 0 20 20">
+                    <path d="M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z"></path>
+                    </svg>
+                </button>
+                </div>
+            </section>
+
+            <section class="linkinsta">
+                <!-- heir habe ich meinen istagram account mit "<a>" wie oben auch schon verlinkt. -->
+                <a class="instagram" href="https://www.instagram.com/jasper_schneider_/">My instagram</a>
+            </section>
+            <!-- heir habe ich mit "&copy;" ein copywrit icon hinzugefügt -->
+            <p class="copywrite">
+                &copy; Jasper Schneider
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
